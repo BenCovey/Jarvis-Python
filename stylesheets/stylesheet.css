@@ -37,6 +37,7 @@ li {
 
 header {
   background: rgba(0, 0, 0, 0.1);
+  background-color: #cccccc;
   width: 100%;
   border-bottom: 1px dashed #b5e853;
   padding: 20px 0;
@@ -56,7 +57,7 @@ header h1 {
   letter-spacing: -1px;
   -webkit-font-smoothing: antialiased;
 }
-#row{
+.row{
   background-image: url(/images/header11.png); 
   
 }
