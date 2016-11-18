@@ -1,15 +1,3 @@
-	body {
-  font-family: Arial, sans-serif;
-  background: url(4.jpg);
-  background-size: cover;
-}
-
-h1 {
-  text-align: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: orange;
-  margin: 100px 0;
-}
 
 .box {
   width: 20%;
