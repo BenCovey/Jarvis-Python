@@ -68,7 +68,7 @@
   color: orange;
 }
 .popup .content {
-  width:40%;
+  width:95%;
   max-height: 30%;
   overflow: auto;
 }
