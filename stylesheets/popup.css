@@ -9,6 +9,9 @@
   text-align: center;
 }
 
+a{
+  color:orange;
+}
 .button {
   font-size: 1em;
   padding: 10px;
