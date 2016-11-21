@@ -47,6 +47,7 @@
   border-radius: 5px;
   position: relative;
   transition: all 5s ease-in-out;
+  overflow: auto;
 }
 
 .popup h2 {
@@ -69,6 +70,6 @@
 }
 .popup .content {
   width:95%;
-  max-height: 30%;
+  max-height: 70%;
   overflow: auto;
 }
