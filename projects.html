@@ -238,7 +238,47 @@
 			<a class="close" href="#">×</a>
 			<div class="content">
 				<code>
-					
+					public class Calculate {<br>
+					    int TypeMath = 0;<br>
+					    String txtString = "NULL";<br>
+					    public String doCalc(String num, String num2){<br>
+						/**<br>
+						 * Math int Type:<br>
+						 * 0 - None<br>
+						 * 1 - Subtract<br>
+						 * 2 - Add<br>
+						 * 3 - Multiply<br>
+						 * 4 - Divide<br>
+						 */<br>
+						double Number1 = 0;<br>
+						double Number2;<br>
+						try {<br>
+						    Number1 = Double.parseDouble(num);<br>
+						    Number2 = Double.parseDouble(num2);<br>
+						}catch(Exception E){<br>
+						    Number2 = 0;<br>
+						}<br>
+                        			<br>
+						if(TypeMath ==1){<br>
+						    Number1 = Number1 - Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath == 2){<br>
+						    Number1 = Number1 + Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath == 3){<br>
+						    Number1 = Number1 * Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath ==4){<br>
+						    if(Number1 == 0 || Number2 == 0){<br>
+							txtString = "ERROR";<br>
+						    }else {<br>
+							Number1 = Number1 / Number2;<br>
+							txtString = "" + Number1;<br>
+						    }<br>
+						}<br>
+						return txtString;<br>
+					    }<br>
+					}<br>
 				</code>
 			</div>
 		</div>
