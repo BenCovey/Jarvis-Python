@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Ben Covey's ePortfolio</title>
+    <title>Ben's Projects</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="stylesheets/portfolio-item.css" rel="stylesheet">
+    <link href="stylesheets/popup.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,22 +57,21 @@
                     <li>
                         <a href="projects">Projects</a>
                     </li>
-		     <li>
+					<li>
                         <a href="contact">Contact</a>
                     </li>
 		    <li>
-			 <a href="Resume">Resume</a>	    
- 		    </li>
+			 <a target="_blank" href="Resume">Resume</a>	    
+		    </li>			
 		    <li>
-			    <a href="https://github.com/BenCovey/NSCC-IT">Github</a>
-		    </li>
-			    
+                        <a href="https://github.com/BenCovey/NSCC-IT">Github</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-</nav>
+    </nav>
 	
     <!-- Page Content -->
     <div class="container">
@@ -80,7 +80,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Projects
-                    <small>C++, Java, PhP, Python, C#, SQL, JavaScript,</small>
+                    <small>C++, Java, PhP, Python, C#, SQL</small>
                 </h1>
 
             </div>
@@ -90,7 +90,7 @@
         <!-- Projects Row -->
         <div class="row">
 		<h4>
-			Clicking a image or link show information about that program.
+			Clicking a image or link will direct you to the code on Github for that project.
 		</h4>
 		
             <div class="col-md-4 portfolio-item box">
@@ -103,7 +103,7 @@
                 <p> C++ - A console based calculator that takes in two fractions and outputs addition, subtraction, division, multiplication, greater than, lesser than, and equals </p>
             </div>
             <div class="col-md-4 portfolio-item box">
-                <a href="#tictactoe">
+                <a href="#tictacteo">
                     <img class="img-responsive" src="images/ticTacToe.PNG" alt="">
                 </a>
                 <h3>
@@ -175,7 +175,10 @@
 			<a class="close" href="#">×</a>
 			<div class="content">
 				<p>
-					The goal of this assignment was to create a tic tac toe program that would in theory never lose. Via either scripting or using a min-max method. I decided to try my hand at scripting, with a large series of switch or if statements I built a logical script that would never lose. Even as my instructor David Russell tried multiple forks. The program helped develop fundamental skills in C++.
+					The goal of this assignment was to create a tic tac toe program that would in theory never lose. 
+					Via either scripting or using a min-max method. I decided to try my hand at scripting, with a large series of
+					switch or if statements I built a logical script that would never lose. Even as my instructor David Russell 
+					tried multiple forks.
 				</p>
 				<p>
 					This assignment required several techniques, first being ability to understand that Tic Tac Toe is a much more
@@ -194,7 +197,7 @@
 			<a class="close" href="#">×</a>
 			<div class="content">
                 Jarvis is a program that is constantly listening, it listens for key words, in this case 'Jarvis' when it hears that it enters it's command mode. In command mode you can ask the program do execute commands for you, such as opening chrome, google searching, opening various games. Creating note files, opening google results. Etc. Below is the main program code. You will notice it is just a couple of lines, and does garbage collection by default.<br>
-				<code>
+				<code><br>
 					__author__ = 'benvc'<br>
                     import __lib__<br>
                     import os<br>
@@ -236,47 +239,47 @@
 			<div class="content">
 				A rolling calculator built for android. It was the first android application that demonstrating multi class applications in an Android Application. Containing many OnClick events, it was a great project to show off code organization in a program, and excellent program to learn the Android architecture.
 				<code>
-					public class Calculate {
-					    int TypeMath = 0;
-					    String txtString = "NULL";
-					    public String doCalc(String num, String num2){
-						/**
-						 * Math int Type:
-						 * 0 - None
-						 * 1 - Subtract
-						 * 2 - Add
-						 * 3 - Multiply
-						 * 4 - Divide
-						 */
-						double Number1 = 0;
-						double Number2;
-						try {
-						    Number1 = Double.parseDouble(num);
-						    Number2 = Double.parseDouble(num2);
-						}catch(Exception E){
-						    Number2 = 0;
-						}
-
-						if(TypeMath ==1){
-						    Number1 = Number1 - Number2;
-						    txtString = "" + Number1;
-						}else if(TypeMath == 2){
-						    Number1 = Number1 + Number2;
-						    txtString = "" + Number1;
-						}else if(TypeMath == 3){
-						    Number1 = Number1 * Number2;
-						    txtString = "" + Number1;
-						}else if(TypeMath ==4){
-						    if(Number1 == 0 || Number2 == 0){
-							txtString = "ERROR";
-						    }else {
-							Number1 = Number1 / Number2;
-							txtString = "" + Number1;
-						    }
-						}
-						return txtString;
-					    }
-					}
+					public class Calculate {<br>
+					    int TypeMath = 0;<br>
+					    String txtString = "NULL";<br>
+					    public String doCalc(String num, String num2){<br>
+						/**<br>
+						 * Math int Type:<br>
+						 * 0 - None<br>
+						 * 1 - Subtract<br>
+						 * 2 - Add<br>
+						 * 3 - Multiply<br>
+						 * 4 - Divide<br>
+						 */<br>
+						double Number1 = 0;<br>
+						double Number2;<br>
+						try {<br>
+						    Number1 = Double.parseDouble(num);<br>
+						    Number2 = Double.parseDouble(num2);<br>
+						}catch(Exception E){<br>
+						    Number2 = 0;<br>
+						}<br>
+                        			<br>
+						if(TypeMath ==1){<br>
+						    Number1 = Number1 - Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath == 2){<br>
+						    Number1 = Number1 + Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath == 3){<br>
+						    Number1 = Number1 * Number2;<br>
+						    txtString = "" + Number1;<br>
+						}else if(TypeMath ==4){<br>
+						    if(Number1 == 0 || Number2 == 0){<br>
+							txtString = "ERROR";<br>
+						    }else {<br>
+							Number1 = Number1 / Number2;<br>
+							txtString = "" + Number1;<br>
+						    }<br>
+						}<br>
+						return txtString;<br>
+					    }<br>
+					}<br>
 				</code>
 			</div>
 		</div>
@@ -298,6 +301,11 @@
 			</div>
 		</div>
 	</div>
+<<<<<<< HEAD
+=======
+	    
+	    
+>>>>>>> origin/master
         <!-- Projects Row -->
  <!--        <div class="row">
             <div class="col-md-4 portfolio-item">
@@ -326,7 +334,12 @@
                     <a href="#">Project Name</a>
                 </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>-->
+<<<<<<< HEAD
 
+=======
+            </div>
+        </div>
+>>>>>>> origin/master
         <!-- /.row -->
 
         <hr>
@@ -341,7 +354,7 @@
                     <li class="active">
                         <a href="/NSCC-IT/projects">1</a>
                     </li>
-                    <li>
+                    <li >
                         <a href="/NSCC-IT/projects-2">2</a>
                     </li>
                     <li>
