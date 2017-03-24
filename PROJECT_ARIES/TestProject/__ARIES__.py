@@ -13,4 +13,4 @@ class aries(object):
         # __lib__.CheckAlarm(__lib__.AlarmTwo)
         # __lib__.CheckAlarm(__lib__.AlarmThree)
         # __lib__.CheckAlarm(__lib__.AlarmFour)
-    os.system('C:/Users/benvc/Documents/PyCharm/PROJECT_ARIES/__mainaries__.py')
+    os.system('C:/Users/benvc/Documents/PyCharm/PROJECT_ARIES/__mainjarvis__.py')
