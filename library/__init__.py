@@ -10,6 +10,7 @@ from oauth2client import tools
 from oauth2client.file import Storage
 import time
 import datetime
+import keyboard
 import sys
 import os
 import requests
@@ -84,9 +85,9 @@ def googling(i):
     import os
     #base google results url
     googlelink = "https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q="
-
+    i = i.lower()
     # Replace all text implementations
-    i = i.replace("Jarvis ", "")
+    i = i.replace("jarvis ", "")
     i = i.replace("google ", "")
     i = i.replace(" please", "")
     i = i.replace(" for me", "")
@@ -266,10 +267,9 @@ def SendKeyS():
 
 def AriesType(i):
     # Remove the question and replace spaces
-    i = i[4:]
-    i = i.replace(" ", "{SPACE}")
+    i = i[5:]
     # Send keystrokes through
-    #SendKeys.SendKeys(str(i))
+    keyboard.write(i)
 
 
 def weatherforecast():
@@ -541,7 +541,7 @@ def read_gmail_message(query):
 
         print('Message snippet: %s' % message['snippet'])
 
-        print(message)
+        #print(message)
     except errors.HttpError as error:
         print('An error occurred: %s' % error)
 
@@ -563,7 +563,7 @@ def gmail_new():
                                                      pageToken=page_token).execute()
             messages.extend(response['messages'])
 
-        print(messages[0]['id'])
+        # print(messages[0]['id'])
         read_gmail_message(messages[0]['id'])
     except errors.HttpError as error:
         print('An error occurred: %s' % error)
@@ -600,13 +600,13 @@ def functioncheck(request):
         engine("Tabbed")
 
     #gmail
-    elif "gmail" in str(request):
+    elif "Gmail" in str(request):
         gmail_new()
     # google image search
     elif "search images of" in str(request):
         imagesearch(request)
     # Google search
-    elif "search this" in str(request) or "Jarvis google" in str(request) or "Jarvis look up" in str(request):
+    elif "Search " in str(request)or "Google" in str(request) or "Jarvis Google" in str(request) or "Jarvis look up" in str(request):
         googling(request)
 
     # Get Aries to type things out
@@ -633,7 +633,5 @@ def functioncheck(request):
         runtime = time.clock()
         engine(str(runtime.format(2)) + " seconds of run time.")
 
-
-    else:
-        print("Nothing Triggered")
+        # print("Nothing Triggered")
 
